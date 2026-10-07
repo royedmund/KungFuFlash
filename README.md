@@ -1,4 +1,25 @@
-# Kung Fu Flash
+# Kung Fu Flash — Roy Antaw’s fork
+
+## About this fork and repository navigation
+
+This is Roy Antaw's fork of [KimJorgensen/KungFuFlash](https://github.com/KimJorgensen/KungFuFlash). The original project guide follows below. Supported formats and hardware notes describe the checked-in snapshot; upstream release links may contain newer firmware.
+
+For normal use, start with the file-loading and firmware-update sections below. For building firmware or initial flashing, use [firmware/README.md](firmware/README.md).
+
+| Location | Purpose |
+| --- | --- |
+| [firmware/](firmware/) | Cartridge firmware and build/flashing instructions |
+| [launcher/](launcher/) | C64 launcher source |
+| [hardware/](hardware/) | Hardware design files |
+| [pics/](pics/) | Project photographs |
+| [3rd_party/](3rd_party/) | Bundled dependencies and adapted tools; retain their individual licences |
+| [LICENSE](LICENSE) | Project licence |
+
+The existing layout separates the two processor targets and hardware designs. Preserve those paths and the third-party attribution when making build changes.
+
+---
+
+## Original project guide
 Cartridge for the Commodore 64 that packs a punch.
 
 ![Kung Fu Flash Launcher](pics/launcher.jpg)
@@ -60,8 +81,8 @@ The newest firmware can be found [here](https://github.com/KimJorgensen/KungFuFl
 For initial firmware installation, [see here](firmware/README.md).
 
 ## Limitations
-Kung Fu Flash is a so called Software Defined Cartridge where a fast microcontroller emulates cartridge hardware in software.
-This makes it extremely flexible, allowing different cartridge types to be supported at a relative low cost.
+Kung Fu Flash is a software-defined cartridge where a fast microcontroller emulates cartridge hardware in software.
+This makes it extremely flexible, allowing different cartridge types to be supported at a relatively low cost.
 
 However, it can be challenging to get the C64 bus timing correct in software and in some places the timing is very close to the limit.
 Even though Kung Fu Flash has been tested on different models of the Commodore 64, there is a chance that it doesn't work correctly on your specific model.
@@ -69,7 +90,7 @@ Use it at your own risk!
 
 Kung Fu Flash will work with the PAL version of the Commodore 64 or Commodore 128. Support for the NTSC version is still considered experimental.
 
-Disk drive emulation is using kernal vectors and will not work with fast loaders or software that uses direct hardware access which a lot of games does. Currently REL files are not supported and there is only limited write support.
+Disk drive emulation is using kernal vectors and will not work with fast loaders or software that uses direct hardware access which many games do. Currently REL files are not supported and there is only limited write support.
 
 ## Thanks
 Kung Fu Flash was based on or uses other open source projects:
