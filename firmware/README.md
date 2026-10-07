@@ -1,4 +1,7 @@
-# Kung Fu Flash Firmware
+# Kung Fu Flash firmware
+
+[Back to the main project guide](../README.md). These instructions describe initial flashing for the hardware in this checkout. The `v1.xx` filename is a placeholder: substitute your actual firmware filename.
+
 The initial firmware installation can be done via the SWD interface (J4) using a ST-Link V2 programmer or via the USB port.
 The Kung Fu Flash cartridge should not be connected to the Commodore 64 before this process has been completed.
 
